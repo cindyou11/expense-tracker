@@ -28,13 +28,14 @@ function AddExpenseForm(props) {
   };
 
   return (
-    <Card className="p-5 text-center mb-5">
+    <Card className="p-5 text-center mb-5 box-shadow border-color">
       <Form onSubmit={submitForm} inline>
         <FormGroup className="mr-5">
           <Label for="name" className="mr-3">
             Name:
           </Label>
           <Input
+            className="border-color"
             type="text"
             name="name"
             id="name"
@@ -49,6 +50,7 @@ function AddExpenseForm(props) {
             Cost:
           </Label>
           <Input
+            className="border-color"
             type="number"
             min="0.01"
             step="0.01"
@@ -65,6 +67,7 @@ function AddExpenseForm(props) {
             Category:
           </Label>
           <Input
+            className="border-color"
             type="text"
             name="category"
             id="category"
@@ -74,7 +77,7 @@ function AddExpenseForm(props) {
             required
           />
         </FormGroup>
-        <Button>Submit</Button>
+        <Button className="submit-button">Submit</Button>
       </Form>
     </Card>
   );

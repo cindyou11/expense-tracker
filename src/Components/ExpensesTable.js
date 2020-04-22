@@ -7,7 +7,7 @@ function ExpensesTable(props) {
   };
 
   return (
-    <Card className="text-center">
+    <Card className="text-center box-shadow border-color">
       {props.expenses.length > 0 ? (
         <Table className="mb-0" responsive hover>
           <thead>
@@ -25,7 +25,7 @@ function ExpensesTable(props) {
                   <td>{expense.cost}</td>
                   <td>{expense.category}</td>
                   <td style={{ width: "200px" }}>
-                    <Button color="danger" onClick={() => deleteExpense(index)}>
+                    <Button className="delete-button " onClick={() => deleteExpense(index)}>
                       Delete
                     </Button>
                   </td>

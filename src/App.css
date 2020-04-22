@@ -1,7 +1,62 @@
 .App {
   padding: 50px 150px;
+  height: 100%;
+  color: #ff2384;
+}
+
+.table, input {
+  color: #ff2384 !important;
+}
+
+input::placeholder {
+  color: #eba5c1 !important;
+}
+
+.border-color {
+  border-color: rgba(237, 39, 132, 0.2) !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(237, 39, 132, 0.5) !important;
+  border-color: rgba(237, 39, 132, 0.5) !important;
+}
+
+.table thead th {
+  border: none !important;
 }
 
 .table td {
   vertical-align: middle !important;
+  border-top-color: rgba(237, 39, 132, 0.1) !important;
+  color: #ff2384 !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #fff0f7 !important;
+}
+
+.box-shadow {
+  box-shadow: 0 10px 25px 0 rgba(237, 39, 132, 0.1)
+}
+
+.submit-button {
+  background-color: #ff2384 !important;
+  border: none !important;
+}
+
+.submit-button:hover {
+  background-color: #b2185c !important;
+}
+
+.delete-button {
+  background-color: #ff0062 !important;
+  border: none !important;
+}
+
+.delete-button:hover {
+  background-color: #c9004d !important;
+}
+
+button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(237, 39, 132, 0.5) !important;
 }
