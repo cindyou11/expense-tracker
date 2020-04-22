@@ -34,7 +34,7 @@ function AddExpenseForm(props) {
     }
 
     return (
-        <Card className="p-5 text-center">
+        <Card className="p-5 text-center mb-5">
             <Form onSubmit={submitForm} inline>
                 <FormGroup className="mr-5">
                     <Label for="name" className="mr-3">Name:</Label>
@@ -42,7 +42,7 @@ function AddExpenseForm(props) {
                 </FormGroup>
                 <FormGroup className="mr-5">
                     <Label for="cost" className="mr-3">Cost:</Label>
-                    <Input type="number" step="0.01" name="cost" id="cost" onChange={onChange} value={form.cost}  placeholder="9.99" required/>
+                    <Input type="number" min="0.01" step="0.01" name="cost" id="cost" onChange={onChange} value={form.cost}  placeholder="9.99" required/>
                 </FormGroup>
                 <FormGroup className="mr-5">
                     <Label for="category" className="mr-3">Category:</Label>
