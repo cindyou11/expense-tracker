@@ -7,11 +7,13 @@ function App() {
   const [expenses, setExpenses] = useState([]);
 
   const addExpense = (expense) => {
-    setExpenses([...expenses, expense]);
+    expenses.unshift(expense);
+    setExpenses([...expenses]);
   };
 
-  const deleteExpense = (expense) => {
-    setExpenses(expenses.filter((exp) => exp.name !== expense.name));
+  const deleteExpense = (index) => {
+    expenses.splice(index, 1);
+    setExpenses([...expenses]);
   };
 
   return (

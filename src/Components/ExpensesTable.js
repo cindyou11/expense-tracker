@@ -2,8 +2,8 @@ import React from "react";
 import { Table, Card, Button } from "reactstrap";
 
 function ExpensesTable(props) {
-  const deleteExpense = (expense) => {
-    props.deleteExpense(expense);
+  const deleteExpense = (index) => {
+    props.deleteExpense(index);
   };
 
   return (
@@ -18,17 +18,14 @@ function ExpensesTable(props) {
             </tr>
           </thead>
           <tbody>
-            {props.expenses.reverse().map((expense) => {
+            {props.expenses.map((expense, index) => {
               return (
-                <tr>
+                <tr key={index}>
                   <td>{expense.name}</td>
                   <td>{expense.cost}</td>
                   <td>{expense.category}</td>
                   <td style={{ width: "200px" }}>
-                    <Button
-                      color="danger"
-                      onClick={() => deleteExpense(expense)}
-                    >
+                    <Button color="danger" onClick={() => deleteExpense(index)}>
                       Delete
                     </Button>
                   </td>

@@ -5,7 +5,7 @@ function AddExpenseForm(props) {
   const [expenseForm, setExpenseFormValues] = useState({
     name: "",
     cost: "",
-    category: "",
+    category: ""
   });
 
   const onChange = (e) => {
@@ -23,7 +23,7 @@ function AddExpenseForm(props) {
     setExpenseFormValues({
       name: "",
       cost: "",
-      category: "",
+      category: ""
     });
   };
 
