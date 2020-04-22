@@ -14,3 +14,4 @@ git clone https://github.com/cindyou11/expense-tracker.git
 #### 3. Install dependencies by running `npm install`
 
 #### 4. Start the app by running `npm start`. This will automatically open a browser window to the application at http://localhost:3000/.
+![alt text](readme-imgs/running-app.png)
